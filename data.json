@@ -1,0 +1,54 @@
+{
+    "work":[
+        {
+            "imgSrc" : "imgs/3-3.jpg",
+            "title" : "Portfolio", 
+            "txt" : "This is my portfolio",
+
+            "img" : "imgs/portfolio.jpg",
+            "address" : "http://",
+            "sub" : "<2021년 포트폴리오 > \n 우주를 모티브로  만든 첫 포트폴리오 입니다.",
+        
+            "where" : "그린컴퓨터아카데미",
+            "period" : "2021.04",
+            "role" : "WEB PUBLISHER",
+            "sitemap" : "Home / Portfolio / Work / About / Contact",
+            "Language" : "HTML5 / CSS3 / JQUERY / JAVASCRIPT"
+            
+        },
+        {
+            "imgSrc" : "imgs/3-2.jpg",
+            "title" : "Stomp Music", 
+            "txt" : "Stomp Music plan/produce albums, discover artists, and distribute unknown foreign albums in Korea.",
+
+            "img" : "imgs/music.jpg",
+            "address" : "http://",
+            "sub" : "<Stomp Music을 클론하게 된 이유> \n 스톰프 뮤직 사이트를 처음 봤을때 군더더기 없이 참 깔끔하고 멋있게 느껴졌습니다.",
+        
+            "where" : "그린컴퓨터아카데미",
+            "period" : "2021.03",
+            "role" : "WEB PUBLISHER",
+            "Language" : "HTML5 / CSS3 / JQUERY / JAVASCRIPT"
+            
+        },
+        {
+            "imgSrc" : "imgs/3-1.jpg",
+            "title" : "TongTong", 
+            "txt" : "TongTong is a web site for Traditional Market owner.",
+
+            "img" : "imgs/tong.jpg",
+            "address" : "http://",
+            "sub" : "< 전통시장통통을 리뉴얼하게 된 이유 > \n 시장 통통 사이트의 경우 소상공인을 위해 만들어졌습니다. 하지만 수많은 내용들을 포함하고 있어서인지 사이트를 한번에 파악하기 어려웠고, 한번에 흥미가 가지 않는 사이트로 인식이 되어 소상공인들이 이용을 잘 하는지 의문이 들었습니다. ",
+        
+            "where" : "그린컴퓨터아카데미",
+            "period" : "2021.01 ~ 2021.02",
+            "role" : "WEB PUBLISHER",
+            "sitemap" : "소상공인 지원/ 전통시장 통통 / 상품권 소개",
+            "language" : "HTML5 / CSS3 / JQUERY / JAVASCRIPT",
+            "solution" : "Main에 사이트의 주요 내용들을 이미지화시켜 한 눈에 주요 내용들을 볼 수 있도록 한다."
+            
+        }
+        
+
+    ]
+}
