@@ -621,21 +621,54 @@ main section.AbouT .lee .right .mbti div strong {
   color: #333;
 }
 
-main section.AbouT .lee .right .mbti div p {
+main section.AbouT .lee .right .mbti div > p {
   padding-bottom: 3%;
+}
+
+main section.AbouT .lee .right .mbti div .chart {
+  text-align: left;
 }
 
 main section.AbouT .lee .right .mbti div .chart .graph {
   border: 1px solid black;
-  height: 500px;
+  padding: 20px 0 40px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main section.AbouT .lee .right .mbti div .chart .graph .g_l {
+main section.AbouT .lee .right .mbti div .chart .graph .g_l, main section.AbouT .lee .right .mbti div .chart .graph .g_r {
   width: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_l p, main section.AbouT .lee .right .mbti div .chart .graph .g_r p {
+  margin-top: 10px;
+  text-align: center;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main section.AbouT .lee .right .mbti div .chart .graph .g_c {
@@ -649,46 +682,228 @@ main section.AbouT .lee .right .mbti div .chart .graph .g_c > div {
   display: flex;
 }
 
-main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .estj {
+main section.AbouT .lee .right .mbti div .chart .graph .g_c > div ul {
   width: 50%;
 }
 
-main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .estj li {
-  position: relative;
-}
-
-main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .estj li p {
-  position: absolute;
-  right: 0;
-}
-
-main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .infp {
-  width: 50%;
-}
-
-main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .infp li {
-  position: relative;
-}
-
-main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .infp li p {
-  position: absolute;
-  left: 0;
-}
-
-main section.AbouT .lee .right .mbti div .chart .graph .g_r {
-  width: 10%;
-}
-
-main section.AbouT .lee .right .mbti div .chart > p {
+main section.AbouT .lee .right .mbti div .chart .graph .g_c > div ul li {
+  height: 80px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c > div ul li p {
+  height: 20px;
+  position: relative;
+  background: #f3f3f3;
+  margin-top: 7px;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c > div ul li p span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 0%;
+  color: #fff;
+  text-indent: 10px;
+  font-size: .8em;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .infp span {
+  left: 0;
+  right: none;
+  text-align: right;
+  text-indent: 0px;
+  padding-right: 10px;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c > div .f span {
+  padding: 0;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active p:first-child span {
+  background: #ee5555;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active p:last-child span {
+  background: #689f38;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .t .gl1_1 span {
+  width: 0%;
+  -webkit-animation: t1 1s forwards;
+          animation: t1 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .t .gl1_2 span {
+  width: 0%;
+  -webkit-animation: t2 1s forwards;
+          animation: t2 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .i .gr1_1 span {
+  width: 0%;
+  -webkit-animation: i1 1s forwards;
+          animation: i1 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .i .gr1_2 span {
+  width: 0%;
+  -webkit-animation: i2 1s forwards;
+          animation: i2 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .n .gr1_1 span {
+  width: 0%;
+  -webkit-animation: n1 1s forwards;
+          animation: n1 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .n .gr1_2 span {
+  width: 0%;
+  -webkit-animation: n2 1s forwards;
+          animation: n2 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .p .gr1_1 span {
+  width: 0%;
+  -webkit-animation: p1 1s forwards;
+          animation: p1 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c.active .p .gr1_2 span {
+  width: 0%;
+  -webkit-animation: p2 1s forwards;
+          animation: p2 1s forwards;
+}
+
+main section.AbouT .lee .right .mbti div .chart .graph .g_c .f span {
+  padding-right: 0;
+}
+
+@-webkit-keyframes t1 {
+  to {
+    width: 11%;
+  }
+}
+
+@keyframes t1 {
+  to {
+    width: 11%;
+  }
+}
+
+@-webkit-keyframes t2 {
+  to {
+    width: 9%;
+  }
+}
+
+@keyframes t2 {
+  to {
+    width: 9%;
+  }
+}
+
+@-webkit-keyframes i1 {
+  to {
+    width: 27%;
+  }
+}
+
+@keyframes i1 {
+  to {
+    width: 27%;
+  }
+}
+
+@-webkit-keyframes i2 {
+  to {
+    width: 19%;
+  }
+}
+
+@keyframes i2 {
+  to {
+    width: 19%;
+  }
+}
+
+@-webkit-keyframes n1 {
+  to {
+    width: 19%;
+  }
+}
+
+@keyframes n1 {
+  to {
+    width: 19%;
+  }
+}
+
+@-webkit-keyframes n2 {
+  to {
+    width: 3%;
+  }
+}
+
+@keyframes n2 {
+  to {
+    width: 3%;
+  }
+}
+
+@-webkit-keyframes p1 {
+  to {
+    width: 57%;
+  }
+}
+
+@keyframes p1 {
+  to {
+    width: 57%;
+  }
+}
+
+@-webkit-keyframes p2 {
+  to {
+    width: 53%;
+  }
+}
+
+@keyframes p2 {
+  to {
+    width: 53%;
+  }
+}
+
+main section.AbouT .lee .right .mbti div .chart .when {
+  text-align: center;
+}
+
+main section.AbouT .lee .right .mbti div .chart .when p {
+  display: inline-block;
+  margin-top: 2%;
+}
+
+main section.AbouT .lee .right .mbti div .chart .when p:nth-of-type(1) {
+  background: no-repeat url("../imgs/bk_red.png");
+  background-size: 30px;
+}
+
+main section.AbouT .lee .right .mbti div .chart .when p:nth-of-type(2) {
+  background: no-repeat url("../imgs/bk_green.png");
+  background-size: 30px;
 }
 
 main section.AbouT .lee .right .School .H h2 {

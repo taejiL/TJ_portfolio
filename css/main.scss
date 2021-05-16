@@ -209,7 +209,7 @@ main{
                 margin:5% 0;
                 @include flex;
 
-                background-image: url('/imgs/uni.jpg');
+                background-image: url('../imgs/uni.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -230,13 +230,13 @@ main{
             }
             .right{width:50%;
                 .fire{padding:10%;
-                    background-image: url(/imgs/bk_red.png);
+                    background-image: url(../imgs/bk_red.png);
                     background-repeat: no-repeat;
 
                     p{padding:5% 0 0 5%;}
                 }
                 .grabbit{padding:10%;
-                    background-image: url(/imgs/bk_green.png);
+                    background-image: url(../imgs/bk_green.png);
                     background-repeat: no-repeat;
 
                     p{padding:5% 0 0 5%;}
@@ -428,57 +428,122 @@ main{
                             padding-bottom: 60px;
                             color:#333;
                         }
-                        p{padding-bottom:3%;}
+                        &>p{padding-bottom:3%;}
                         .chart{
                            
                            
                             .graph{
                                 border:1px solid black;
-                                height:500px;
+                                padding:20px 0 40px;
                                 width:100%;
                                     display: flex;
-                                .g_l{width:10%;
+                                .g_l,.g_r{width:10%;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    p{
+                                        margin-top:10px;
+                                        text-align: center;
+                                        height:80px;
+                                        display:flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
+                                    }
 
 
                                 }
                                 .g_c{width:80%;
                                     &>div{width:100%;
                                         display: flex;
-                                        .estj{width:50%;
-                                            li{position:relative;
-                                                p{position:absolute;
-                                                    right:0;
+                                        ul{width:50%;
+                                            li{
+                                                height: 80px;
+                                                margin-top:10px;
+                                                display:flex;
+                                                justify-content: center;
+                                                flex-direction: column;
+                                                p{
+                                                    height:20px;
+                                                    position:relative;
+                                                    background: #f3f3f3;
+                                                    // border-radius: 40px;  
+                                                    margin-top:7px;
+                                                    span{
+                                                        position:absolute;
+                                                        top:0;
+                                                        right:0;
+                                                        height:20px;
+                                                        width: 0%;                                                       
+                                                        // border-radius: 40px;
+                                                        color:#fff;
+                                                        text-indent:10px;    
+                                                        font-size:.8em;                                               
+                                                    }
                                                 }
+                                               
                                             }
                                         }
-                                        .infp{width:50%;
-                                            li{position:relative;
-                                                p{position:absolute;
-                                                    left:0;
-                                                }
-                                            }
-                                        }
+                                        .infp span{
+                                            left:0;
+                                            right:none;
+                                            text-align:right;
+                                            text-indent:0px;
+                                            padding-right:10px;
 
+                                        }
+                                        .f span{padding:0;}
                                     }
+                                    
+                                     // left
+                                    &.active p:first-child span{background:#ee5555;}
+                                    &.active p:last-child span{background:#689f38;}
+
+                                    &.active .t .gl1_1 span{width:0%; animation: t1 1s forwards;}
+                                    &.active .t .gl1_2 span{width:0%; animation: t2 1s forwards;}
+                                     // right
+                                    &.active .i .gr1_1 span{width:0%; animation: i1 1s forwards;}
+                                    &.active .i .gr1_2 span{width:0%; animation: i2 1s forwards;}
+
+                                    &.active .n .gr1_1 span{width:0%; animation: n1 1s forwards;}
+                                    &.active .n .gr1_2 span{width:0%; animation: n2 1s forwards;}
+
+                                    &.active .p .gr1_1 span{width:0%; animation: p1 1s forwards;}
+                                    &.active .p .gr1_2 span{width:0%; animation: p2 1s forwards;}
+
+                                     .f span{padding-right:0;}
+
+                                     @keyframes t1 { to{width:11%;}}
+                                     @keyframes t2 { to{width:9%;}}
+
+                                     @keyframes i1 { to{width:27%;}}
+                                     @keyframes i2 { to{width:19%;}}
+
+                                     @keyframes n1 { to{width:19%;}}
+                                     @keyframes n2 { to{width:3%;}}
+
+                                     @keyframes p1 { to{width:57%;}}
+                                     @keyframes p2 { to{width:53%;}}
 
 
                                 }
-                                .g_r{width:10%;
-                                
-                                
-                                }
 
-                            
                             }
-
+                            
+                            text-align: left;
+                            .when{ text-align: center;
+                                p{ display: inline-block;
+                                    margin-top: 2%;
+                                   }
+                               p:nth-of-type(1){
+                                   background:no-repeat url('../imgs/bk_red.png');
+                                    background-size:30px;}
+                               p:nth-of-type(2){
+                                   background:no-repeat url('../imgs/bk_green.png');
+                                    background-size:30px;}
                                 
-
-
-
-
-
-                          
-                            &>p{@include flex;}
+                            }
+                            
                         }
                     }
                     
@@ -545,7 +610,7 @@ main{
     section.ContacT{
         
         .myinfo{
-            background-image: url('/imgs/uni.jpg');
+            background-image: url('../imgs/uni.jpg');
             padding:200px 0;
             ul{width: 500px;
                 margin:0 auto;
