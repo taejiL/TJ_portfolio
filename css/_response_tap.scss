@@ -1,0 +1,106 @@
+@media (min-width:768px) and (max-width:1024px){
+    /* 768 ~ 1024 */
+    
+    header{
+        div.nav{
+            ul{
+                padding:15% 5% 5% 5%;
+                li:nth-of-type(5){padding:5%;}
+                li{
+                    a{
+                        strong{font: 25px 'Noto Sans KR';}
+                        p{font: 13px 'Noto Sans KR';}
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+
+    main{
+
+        // portfolio
+        section.PortfoliO{
+            .ConcepT1{
+                display:block;
+                .left{width:100%;
+                }
+
+                .right{width:100%;
+                
+                }
+            }
+            .ConcepT2{padding:0;
+                .star{
+                    div{
+                        width: 100%;
+                    }
+                }
+                .LogO{
+                    padding-bottom: 5%;
+                    div:nth-of-type(1){
+                        width: 100%;
+                        justify-content: space-around;
+                        img{width:35px;}
+                    }
+                    p{text-align:left;}
+                }
+                
+            }
+
+        }
+
+        // work 
+        section.WorK{
+            .thum{
+                div{
+                    .img_txt{
+                        h5{font-size: 50px;}
+                    }
+                }
+            }
+            .pop{
+                &>div{padding:0;}
+                h4{font-size: 35px; padding:20px;}
+                .pop_about{display:block;
+                    width:70%; 
+                    margin:0 auto;
+                    img{width:100%;}
+                }
+            }
+
+
+        }
+
+
+
+        //about
+        section.AbouT{
+            .lee{
+                .left{ position:static;
+                    width:100%;
+                    text-align: center;
+                    div{display:none;}
+                   
+
+                }
+                .right{
+                    width:100%;
+                    .School{
+                        .school_txt{display:block;}
+                    }
+
+                }
+
+
+            }
+
+        }
+
+
+    
+    }
+
+}
